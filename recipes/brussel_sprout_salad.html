@@ -17,8 +17,6 @@
           height: auto;
             }
     
-
-   
          .overlay-recipe-header {
             position: absolute;
             top: 0px; 
@@ -26,10 +24,10 @@
             color: black;
             font-size: 50px; 
             text-align: left;
-            padding-top: 90px;
+            padding-top: 50px;
             padding-left: 80px;
             padding-right: 80px;
-            padding-bottom: 50px;
+            padding-bottom: 20px;
             background-color: #eeeeeecd;
             letter-spacing: 15px;
             }
@@ -41,12 +39,13 @@
             color: black;
             font-size: 20px; 
             text-align: left;
+            border-radius: 5px;
             padding: 50px;
             background-color: #eeeeeeeb;
             letter-spacing: 2px;
             }
         .button {
-            background-color: #007bff; 
+            background-color: #221B00; /* Darker green color*/
             color: white;
             border: none;
             padding: 10px 20px;
@@ -59,7 +58,7 @@
 
          /* Style for the button hover */
         .button:hover {
-            background-color: #0056b3; /* Darker blue color */
+            background-color: #51461B; /* Lighter green color */
             }
         
         .button a {
@@ -67,14 +66,23 @@
             font-weight: bold;
             text-decoration: none;
             }
+        .home-button {
+            transform: scale(0.6); 
+            letter-spacing: 3px;
+            position: absolute;
+            top: 20px; 
+            left: 0px; 
+             }
       </style>
 </head>
 <body>
     <div class="container">
         <img src="brussel-sprout-salad-with-anchovy-dressing.webp" alt="Brussel Sprout Salad Image">
-        <div class="overlay-recipe-header">Brussels Sprout Salad with Anchovy Tahini & Roasted Chickpeas</div>
+        <div class="overlay-recipe-header">
+            <p><a href="https://justinesnacks.com/brussels-sprout-salad-with-anchovy-tahini-zaatar-chickpeas/" target="_blank" class="button home-button"><-- Home</a></p>
+            <p>Brussels Sprout Salad with Anchovy Tahini & Roasted Chickpeas</p>
+        </div>
         <div class="overlay-recipe-description">
-            
             <p>created by the incredible Justine Snacks, this brussel sprout salad is what dreams are made of. Say hello to a salad that tastes like a potato chip.</p>
             <p><a href="https://justinesnacks.com/brussels-sprout-salad-with-anchovy-tahini-zaatar-chickpeas/" target="_blank" class="button">See the Recipe</a></p>
         </div>
