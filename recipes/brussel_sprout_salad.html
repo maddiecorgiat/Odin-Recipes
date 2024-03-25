@@ -5,45 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brussel Sprout Salad</title>
     <style>
-        body {font-family: monospace;
+        body {
+            font-family: monospace;
             background-color: #eee;
-            } 
-         .container {
+        }
+
+        .container {
             position: relative;
-            width: 100%;
-            }
+            max-width: 100%; /* Adjust as needed */
+        }
+
+        .flex_container {
+            position: absolute; /* Position absolutely */
+            top: 0; /* Align to the top of the container */
+            left: 0; /* Align to the left of the container */
+            width: 100%; /* Occupy the entire width */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            z-index: 1; /* Ensure it appears on top of the image */
+            gap: 80px;
+        }
+
         img {
-          max-width: 100%; 
-          height: auto;
-            }
-    
-         .overlay-recipe-header {
-            position: absolute;
-            top: 0px; 
-            left: 0px; 
+            max-width: 100%;
+            height: auto;
+        }
+
+        .overlay-recipe-header {
+            
             color: black;
-            font-size: 50px; 
+            font-size: 50px;
             text-align: left;
-            padding-top: 50px;
+            padding-top: 40px;
             padding-left: 80px;
             padding-right: 80px;
-            padding-bottom: 20px;
+            padding-bottom: 10px;
             background-color: #eeeeeecd;
             letter-spacing: 15px;
-            }
+        }
+
         .overlay-recipe-description {
-            position: absolute;
-            top: 50%;
-            left: 60%;
-            transform: translate(-35%, -90%);
+            align-self: center;
             color: black;
-            font-size: 20px; 
+            font-size: 20px;
             text-align: left;
             border-radius: 5px;
             padding: 50px;
             background-color: #eeeeeeeb;
             letter-spacing: 2px;
-            }
+            margin-left: 30%; /* Add left margin */
+            margin-right: 10%; /* Add right margin */
+        }
+
         .button {
             background-color: #221B00; /* Darker green color*/
             color: white;
@@ -54,40 +69,44 @@
             text-decoration: none;
             display: inline-block;
             transition: background-color 0.3s ease;
-            }
+        }
 
-         /* Style for the button hover */
+        /* Style for the button hover */
         .button:hover {
             background-color: #51461B; /* Lighter green color */
-            }
-        
+        }
+
         .button a {
             color: white;
             font-weight: bold;
             text-decoration: none;
-            }
+        }
+
         .home-button {
-            transform: scale(0.6); 
+            transform: scale(0.6);
             letter-spacing: 3px;
             position: absolute;
-            top: 20px; 
-            left: 0px; 
-             }
-      </style>
+            top: 20px;
+            left: 0px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <img src="brussel-sprout-salad-with-anchovy-dressing.webp" alt="Brussel Sprout Salad Image">
+<div class="container">
+    <img src="brussel-sprout-salad-with-anchovy-dressing.webp" alt="Brussel Sprout Salad Image">
+    <div class="flex_container">
         <div class="overlay-recipe-header">
-            <p><a href="https://justinesnacks.com/brussels-sprout-salad-with-anchovy-tahini-zaatar-chickpeas/" target="_blank" class="button home-button"><-- Home</a></p>
+            <p><a href="https://justinesnacks.com/brussels-sprout-salad-with-anchovy-tahini-zaatar-chickpeas/"
+                  target="_blank" class="button home-button"><-- Home</a></p>
             <p>Brussels Sprout Salad with Anchovy Tahini & Roasted Chickpeas</p>
         </div>
         <div class="overlay-recipe-description">
-            <p>created by the incredible Justine Snacks, this brussel sprout salad is what dreams are made of. Say hello to a salad that tastes like a potato chip.</p>
-            <p><a href="https://justinesnacks.com/brussels-sprout-salad-with-anchovy-tahini-zaatar-chickpeas/" target="_blank" class="button">See the Recipe</a></p>
+            <p>created by the incredible Justine Snacks, this brussel sprout salad is what dreams are made of. Say hello
+                to a salad that tastes like a potato chip.</p>
+            <p><a href="https://justinesnacks.com/brussels-sprout-salad-with-anchovy-tahini-zaatar-chickpeas/"
+                  target="_blank" class="button">See the Recipe</a></p>
         </div>
     </div>
-   
-    
+</div>
 </body>
 </html>
